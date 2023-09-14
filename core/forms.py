@@ -17,7 +17,7 @@ class SignupForm(UserCreationForm):
         fields = ('username','email','password1','password2')
 
     username = forms.CharField(widget=forms.TextInput(attrs={
-        'placeholder':'Enter your username',
+        'placeholder':'@quickie',
         'class':'w-full py-4 px-6   dark:text-black rounded-xl'
     }))
     email = forms.CharField(widget=forms.EmailInput(attrs={
