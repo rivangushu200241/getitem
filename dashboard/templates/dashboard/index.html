@@ -95,10 +95,10 @@
             {% if items %}
             {% for item in items %}
 
-                <div class="shadow-xl h-fit  rounded-b-xl ">
+                <div class="shadow-xl h-48  rounded-b-xl ">
                     <a href="{% url 'item:detail' item.id %}">
                         <div class="md:shrink-0">
-                            <img src="{{ item.image.url }}" class="w-full {% if item.is_sold == True %} grayscale {% endif %}" alt="">
+                            <img src="{{ item.image.url }}" class="w-full h-24 {% if item.is_sold == True %} grayscale {% endif %}" alt="">
                         </div>
                         <div class="sm:p-6 p-3 bg-gray-100 md:flex dark:bg-gray-900 dark:text-white  md:justify-between justify-center rounded-b-xl ">
                             <div>
