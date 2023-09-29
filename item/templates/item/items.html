@@ -63,11 +63,11 @@
                 <div class="row " >
 
                 {% for item in items %}
-                    <div class="column m-2">
+                    <div class="column m-2 shadow-xl h-48  rounded-b-xl">
                         
                         <a href="{% url 'item:detail' item.id %}" class="">
-                            <div class="    ">
-                                <img src="{{ item.image.url }}" class="w-full rounded-t-xl dark:brightness-50   hover:drop-shadow-xl" alt="">
+                            <div class="md:shrink-0">
+                                <img src="{{ item.image.url }}" class="w-full h-24 rounded-t-xl dark:brightness-50   hover:drop-shadow-xl" alt="">
                             </div>
                             <div class="p-6 bg-gray-100 dark:text-white dark:bg-gray-800  rounded-b-xl shadow-xl hover:shadow-2xl">
                                 <h2 class="sm:text-2xl text-lg break-words">{{ item.name }}</h2>
