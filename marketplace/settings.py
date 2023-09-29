@@ -159,4 +159,4 @@ CLOUDINARY_STORAGE ={
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-
+DATA_UPLOAD_MAX_MEMORY_SIZE = 10*1024*1024 
