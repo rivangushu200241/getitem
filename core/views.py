@@ -5,7 +5,7 @@ from django.contrib.auth import logout, login
 from .forms import SignupForm
 
 def index(request):
-    items = Item.objects.filter(is_sold=False)[0:]
+    items = Item.objects.filter(is_sold=False)[0:1000000]
     categories = Category.objects.all()
     return render(request,'core/index.html',{
         'categories':categories,
